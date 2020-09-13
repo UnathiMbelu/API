@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-03T11:27:35.765Z",
+        "line": 3,
+        "name": "Should display success message when I select a random breed",
+        "description": "",
+        "id": "select-a-random-breed;should-display-success-message-when-i-select-a-random-breed",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1083000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Dogs",
+            "match": {
+              "location": "Dogs.ImpleDogs.dogs()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1923000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Select breed",
+            "match": {
+              "location": "Dogs.ImpleDogs.select_breed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 755000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"status\" Display message \"success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"success\"",
+                  "offset": 25
+                }
+              ],
+              "location": "Dogs.ImpleDogs.display_message(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Show \"Success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Success\"",
+                  "offset": 5
+                }
+              ],
+              "location": "Dogs.ImpleDogs.Show(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Select a random breed",
+    "description": "",
+    "id": "select-a-random-breed",
+    "keyword": "Feature",
+    "uri": "file:DogMessageFeature/DogMessage.feature",
+    "tags": []
+  }
+]

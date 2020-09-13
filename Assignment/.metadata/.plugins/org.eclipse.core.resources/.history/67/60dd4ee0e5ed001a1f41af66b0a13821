@@ -1,0 +1,326 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-03T10:56:48.305Z",
+        "line": 2,
+        "name": "Should display list of all bull dogs",
+        "description": "",
+        "id": "select-all-bulldogs;should-display-list-of-all-bull-dogs",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 3,
+            "name": "Dogs",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user fetch all bull dogs",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "\"message\" in response \"bulldog\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Select all bulldogs",
+    "description": "",
+    "id": "select-all-bulldogs",
+    "keyword": "Feature",
+    "uri": "file:DogFeatures/AllBulldogs.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-03T10:56:48.316Z",
+        "line": 3,
+        "name": "Add a new pet with an auto generated name and status available",
+        "description": "",
+        "id": "confirming-a-new-pet-has-been-successfully-added-and-retrieve-it-by-id;add-a-new-pet-with-an-auto-generated-name-and-status-available",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "add pet payload",
+            "match": {
+              "location": "PetConfirmImple.ConfirmPetID.add_pet_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1556000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls add pet with POST HTTP request",
+            "match": {
+              "location": "PetConfirmImple.ConfirmPetID.user_calls_add_pet_with_post_http_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call processes successfully with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "PetConfirmImple.ConfirmPetID.the_api_call_processes_successfully_with_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"status\" in response body is \"available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"available\"",
+                  "offset": 29
+                }
+              ],
+              "location": "PetConfirmImple.ConfirmPetID.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1525000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "pet object in add pet call is the same object in respons9",
+            "match": {
+              "location": "PetConfirmImple.ConfirmPetID.pet_object_in_add_pet_call_is_the_same_object_in_respons9()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Confirming a new pet has been successfully added and retrieve it by ID",
+    "description": "",
+    "id": "confirming-a-new-pet-has-been-successfully-added-and-retrieve-it-by-id",
+    "keyword": "Feature",
+    "uri": "file:DogFeatures/ConfirmPet.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-03T10:56:51.443Z",
+        "line": 3,
+        "name": "Should display success message when I select a random breed",
+        "description": "",
+        "id": "select-a-random-breed;should-display-success-message-when-i-select-a-random-breed",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "Dogs",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Select breed",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "\"status\" Display message \"success\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Show \"Success\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Select a random breed",
+    "description": "",
+    "id": "select-a-random-breed",
+    "keyword": "Feature",
+    "uri": "file:DogFeatures/DogMessage.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-03T10:56:51.451Z",
+        "line": 3,
+        "name": "Retrieve all available pets and confirm that the name “doggie” with category id \"12\" is on the list",
+        "description": "",
+        "id": "get-available-pets-and-confirm-the-name-and-category;retrieve-all-available-pets-and-confirm-that-the-name-“doggie”-with-category-id-\"12\"-is-on-the-list",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "Fetch pets available",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user calls findPets \"available\" with GET HTTP request method",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "\"name\" should be \"doggie\" and category \"id\" must be \"12\" in response body",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the call processes successful with status code 200",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Get available pets and confirm the name and category",
+    "description": "",
+    "id": "get-available-pets-and-confirm-the-name-and-category",
+    "keyword": "Feature",
+    "uri": "file:DogFeatures/Pet.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-03T10:56:51.458Z",
+        "line": 2,
+        "name": "Should display list of all bull dogs",
+        "description": "",
+        "id": "select-all-bulldogs;should-display-list-of-all-bull-dogs",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 3,
+            "name": "Fetch bulldog breed list",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user calls bulldogBreeds",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "response body list",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "retrieve images of each sub-breed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Select all bulldogs",
+    "description": "",
+    "id": "select-all-bulldogs",
+    "keyword": "Feature",
+    "uri": "file:DogFeatures/Subbreeds.feature",
+    "tags": []
+  }
+]

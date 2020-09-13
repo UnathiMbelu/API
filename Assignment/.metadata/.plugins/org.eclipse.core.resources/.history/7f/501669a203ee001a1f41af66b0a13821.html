@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Feature: Confirming a new pet has been successfully added and retrieve it by ID </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>${${project.name}}</td>
+                          <td>1</td>
+                        <td>03 Sep 2020, 18:35</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Feature Report</h2>
+  </div>
+
+
+<div class="container-fluid" id="report-summary">
+  <table class="stats-table">
+    <thead>
+  <tr class="header">
+        <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th id="stats-header-key">Feature</th>
+        <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed"    class="passed">Passed</th>
+    <th id="stats-header-steps-failed"    class="failed">Failed</th>
+    <th id="stats-header-steps-skipped"   class="skipped">Skipped</th>
+    <th id="stats-header-steps-pending"   class="pending">Pending</th>
+    <th id="stats-header-steps-undefined" class="undefined">Undefined</th>
+    <th id="stats-header-steps-missing"   class="missing">Missing</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+  </tr>
+</thead>
+
+        <tr>
+      <td class="tagname"><a id="stats-Confirming a new pet has been successfully added and retrieve it by ID" href="file-ConfirmPetFeature-ConfirmPet-feature_2.html">Confirming a new pet has been successfully added and retrieve it by ID</a></td>
+            <td id="stats-number-scenarios-Confirming a new pet has been successfully added and retrieve it by ID">1</td>
+      <td id="stats-number-scenarios-passed-Confirming a new pet has been successfully added and retrieve it by ID">1</td>
+      <td id="stats-number-scenarios-failed-Confirming a new pet has been successfully added and retrieve it by ID">0</td>
+      <td id="stats-number-steps-Confirming a new pet has been successfully added and retrieve it by ID">5</td>
+      <td id="stats-number-steps-passed-Confirming a new pet has been successfully added and retrieve it by ID">5</td>
+      <td id="stats-number-steps-failed-Confirming a new pet has been successfully added and retrieve it by ID"    >0</td>
+      <td id="stats-number-steps-skipped-Confirming a new pet has been successfully added and retrieve it by ID"   >0</td>
+      <td id="stats-number-steps-pending-Confirming a new pet has been successfully added and retrieve it by ID"   >0</td>
+      <td id="stats-number-steps-undefined-Confirming a new pet has been successfully added and retrieve it by ID" >0</td>
+      <td id="stats-number-steps-missing-Confirming a new pet has been successfully added and retrieve it by ID"   >0</td>
+      <td id="stats-duration-Confirming a new pet has been successfully added and retrieve it by ID" class="duration-format">10s 412ms</td>
+      <td id="stats-status-Confirming a new pet has been successfully added and retrieve it by ID" class="passed">Passed</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="container-fluid" id="report-details">
+  <div class="feature-tags"></div>
+  <div class="passed">
+    <div class="feature-line">
+      <span class="feature-keyword">Feature: </span>Confirming a new pet has been successfully added and retrieve it by ID
+    </div>
+  </div>
+  <div class="feature-description"></div>
+
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Add a new pet with an auto generated name and status available</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">add pet payload</span><span class="step-duration">011ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">user calls add pet with POST HTTP request</span><span class="step-duration">04s 156ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">the API call processes successfully with status code 200</span><span class="step-duration">001ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">&quot;status&quot; in response body is &quot;available&quot;</span><span class="step-duration">009ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">pet object in add pet call is the same object in respons9</span><span class="step-duration">06s 235ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+  </div>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

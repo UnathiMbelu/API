@@ -1,0 +1,15 @@
+package ApiAssignment.ApiAssignment;
+
+
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "DogFeatures", glue = "AllBullDogs",
+plugin = {"json:ApiAssignment/cucumber-reports/advanced.json","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:ApiAssignment/cucumber-reports/Extent.html"})
+public class AllBullDogsTest {
+
+}

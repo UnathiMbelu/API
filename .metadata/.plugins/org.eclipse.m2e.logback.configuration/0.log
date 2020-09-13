@@ -1,0 +1,11 @@
+2020-09-11 11:13:14,329 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ApiAssignment:ApiAssignment:0.0.1-SNAPSHOT @ C:\Users\unath\Desktop\Assignment-20200911T090947Z-001\Assignment\ApiAssignment\pom.xml.
+2020-09-11 11:13:14,329 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ApiAssignment:ApiAssignment:0.0.1-SNAPSHOT @ C:\Users\unath\Desktop\Assignment-20200911T090947Z-001\Assignment\ApiAssignment\pom.xml.
+2020-09-11 11:13:15,745 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-09-11 11:13:15,745 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\unath\Desktop\Assignment-20200911T090947Z-001\Assignment\ApiAssignment\src\main\resources
+2020-09-11 11:13:15,748 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-09-11 11:13:15,748 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\unath\Desktop\Assignment-20200911T090947Z-001\Assignment\ApiAssignment\src\test\resources
+2020-09-11 11:13:16,735 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ApiAssignment:ApiAssignment:0.0.1-SNAPSHOT @ C:\Users\unath\Desktop\Assignment-20200911T090947Z-001\Assignment\ApiAssignment\pom.xml.
+2020-09-11 11:13:18,281 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-09-11 11:13:18,282 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\unath\Desktop\Assignment-20200911T090947Z-001\Assignment\ApiAssignment\src\main\resources
+2020-09-11 11:13:18,284 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-09-11 11:13:18,284 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\unath\Desktop\Assignment-20200911T090947Z-001\Assignment\ApiAssignment\src\test\resources
